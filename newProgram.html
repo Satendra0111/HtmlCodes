@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let usename =["sam12993a", "Satend12", "Sate123", "Satendra123", "S@m123"];
+
+    function usercheck(value){
+        if(usename.includes(value)){
+            console.log("Username Present in the Database")
+        }else{
+            console.log("Username Assigned to you");
+            usename.push(value);
+        }
+    }
+
+    usercheck("S@m12993a");
+    console.log(usename);
+    usercheck("S@m12993a");
+
+</script>
+</body>
+</html>

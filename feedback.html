@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        students = [
+        {
+          name: "sohail",
+          feedback: 4,
+        },
+        {
+          name: "sanjay",
+          feedback: 3,
+        },
+        {
+          name: "satendra",
+          feedback: 4,
+        },
+        {
+          name: "vaibhav",
+          feedback: 3,
+        },
+      ];
+
+      function feed(){
+        for(let i=0; i<4; i++){
+            if(students[i].feedback>4) console.log(students[i].name + " Has given good feedback")
+            else console.log(students[i].name + " Has given bad feedback")
+        }
+      }
+
+      feed();
+    </script>
+</body>
+</html>

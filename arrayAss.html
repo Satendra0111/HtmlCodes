@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task 1
+        let Arr1=["Product A - 1000 - Category 1 - In Stock",
+        "Product B - 20000 - Category 2 - In Stock",
+        "Product C - 15000 - Category 1 - Out of Stock",
+        "Product D - 250- Category 2 - In Stock"]
+
+        // task 2
+        function displayp(i){
+            console.log(Arr1[i]);
+        }
+
+        displayp(3);
+
+        // task 3
+
+        function add(value){
+            Arr1.push(value);
+            console.log(Arr1); 
+        }
+
+        add("Product E - 260- Category 1 - In Stock")
+
+        // task 4
+
+     /*   function remove( del){
+            console.log(Arr1[del] + " Is Removed From List");
+            Arr1.splice(del,1);
+            console.log(Arr1);
+        }
+
+        remove(2);*/
+
+        //remove out in stok
+        function remove2(){
+            for (let i = 0; i<Arr1.length; i++){
+                if(Arr1[i].includes("Out of Stock")) {
+                    Arr1.splice(i,1);
+                }
+            }
+            console.log(Arr1);
+        }
+
+        remove2();
+
+
+
+
+    </script>
+</body>
+</html>

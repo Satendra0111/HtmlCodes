@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr =[10,20,30,40,40,50];
+        console.log(arr);
+
+        arr.push(56);    // push at end 
+        console.log(arr);
+
+        arr.unshift(9); // push in the begining
+        console.log(arr);
+
+        arr.pop();      // remove from end
+        console.log(arr);
+
+        arr.shift();    // remove from begining
+        console.log(arr);
+
+        arr.splice(2,2);    // remove data in between
+        console.log(arr);
+
+        arr.splice(2,0,30,45); // Add Data in between
+        console.log(arr);
+
+        let str="sam 30 30000 AP";
+        let arr2= str.split(" ");
+        console.log(arr2);
+        arr2[2]= 30000
+        console.log(arr2);
+        //array to string
+        s1= arr2.join(" ")
+        console.log(s1);
+    </script>
+</body>
+</html>
